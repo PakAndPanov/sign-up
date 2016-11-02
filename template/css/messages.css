@@ -1,0 +1,107 @@
+.messageblock{
+    margin:0 0 0 10px;
+    float: right;
+    width:690px;
+    height: 600px;
+    background-color: #2c2b2b;
+}
+
+.messageposttext textarea{
+    position: absolute;
+    width: 670px;
+    top: 500px;
+    height: 70px;
+    background: inherit;
+    color: inherit;
+    font-family:inherit;
+    padding: 10px;
+    border: none;
+    border-top:1px solid;
+    resize: none;
+}
+
+.messageposttext textarea:focus{
+    outline: none;
+}
+
+.messagepost{
+    margin: 0 0 0 10px;
+}
+
+.messagepost input[type="submit"]{
+    position: absolute;
+    top: 605px;
+    text-decoration: none;
+    color: inherit;
+    background:#525252;
+    padding:10px 5px;
+    cursor: pointer;
+    border:none;
+    width: 200px;
+}
+
+.messagepost input[type="submit"]:hover{
+    background:#5c5c5c;
+}
+
+.messagepost input[type="submit"]:focus{
+    outline: none;
+}
+
+.yousaid{
+    margin:20px 0 0 10px;
+}
+
+.yousaid p{
+    display: inline;
+    padding:10px;
+}
+
+.yousaid a{
+    text-decoration: none;
+    color: inherit;
+    padding:10px 10px 10px 0;
+    font-style: italic;
+}
+
+.yousaid a:hover{
+    text-decoration: underline;
+}
+
+.messagefor{
+    position: relative;
+    width:665px;
+    height:390px;
+    margin: 10px 0 0 5px;
+    padding:5px;
+    background: inherit;
+    overflow:hidden;
+    display:inline-block;
+    word-wrap: break-word;
+}
+
+.messagefor p{
+    width:665px;
+    background: #404040;
+    padding:5px;
+}
+
+.scrolling{
+    position: relative;
+    box-sizing: border-box;
+    width: 800px;
+    max-height: 390px;
+    padding-right: 20px;
+    overflow-y: scroll;
+}
+
+.messagefortext{
+    float: left;
+    width:260px;
+    padding:5px;
+    background:#525252;
+    color: inherit;
+    resize: none;
+    border:none;
+    margin:5px 0 5px 0;
+}

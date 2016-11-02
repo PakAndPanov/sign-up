@@ -1,0 +1,124 @@
+.pagenewsright{
+    width: 250px;
+    float: right;
+}
+.pagenewsmedia{
+    float:right;
+    width:240px;
+    background: #404040;
+    margin:0 0 5px 10px;
+    padding: 5px;
+}
+
+.pagenewsother{
+    float:right;
+    width:250px;
+    background: #404040;
+}
+
+.pagenewsother a{
+    text-decoration: none;
+    color:inherit;
+    padding:10px 5px;
+    line-height: 37px;  
+}
+
+.pagenewscontent{
+    float: left;
+    width:740px;
+    background: #404040;
+}
+
+.pagenewscontent p{
+    margin:10px;
+}
+
+.pagenewstop{
+    width:740px;
+    min-height: 50px;
+}
+
+.pagenewstitle{
+    float: left;
+    margin: 10px;
+    font-size:30px;
+}
+
+.pagenewsauthor{
+    float:right;
+    margin: 10px;
+    line-height: 30px;
+    background: #5a5a5a;
+    padding: 0 10px;
+}
+
+.pagenewscomments{
+    width:740px;
+}
+
+.pagenewscomments textarea{
+    width:720px;
+    height: 80px;
+    background: #5a5a5a;
+    color: inherit;
+    font-family:inherit;
+    padding: 10px;
+    border: none;
+    resize: none;
+    margin: 5px 0 0 0;
+}
+
+.pagenewscomments textarea:focus{
+    outline: none;
+}
+
+.pagenewscomments input{
+    float: right;
+    text-decoration: none;
+    color: inherit;
+    background:#525252;
+    padding:15px;
+    line-height: 0px;
+    cursor: pointer;
+    border:none;
+    width: 200px;
+}
+
+.pagenewscomments input:hover{
+    background:#5c5c5c;
+}
+
+.pagenewscomments input:focus{
+    outline: none;
+}
+
+.pagenewscommentsblock{
+    width:740px;
+    background:#525252;
+    border-top:3px solid #e6e9e9;;
+}
+
+.pagenewscommentstitle{
+    background: #404040;
+    padding:5px 0 5px 10px;
+}
+
+.pagenewscommentsavatar{
+    float: left;
+}
+
+.pagenewscommentsavatar img{
+    width:50px;
+    height:50px;
+    margin:3px 0 10px 10px;
+}
+
+.pagenewscommentstext p{
+    width:660px;
+    margin:0 10px 20px 10px;
+    float: left;
+}
+
+.pagenewscommentscontent{
+    width:740px;
+}

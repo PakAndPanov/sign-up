@@ -1,0 +1,71 @@
+.profileavatar.block{
+    width:220px;
+    float: left;
+    background: #404040;
+    margin:0 0 10px 0;
+}
+
+.profileavatar img{
+    width:200px;
+    height: 230px;
+    margin:10px 10px 0 10px;
+}
+
+.profileavatar.edit{
+    padding:0 0 10px 0;
+}
+
+.profileavatar.edit a{
+    display: block;
+    width:200px;
+    padding:5px 0;
+    margin:0 0 0 10px;
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+    background:#525252;
+    border:none;
+}
+
+.profileavatar.edit a:hover{
+    background:#5c5c5c;
+}
+
+.profileavatar.edit a:focus{
+    outline: none;
+}
+
+.profile.block{
+    float: left;
+    width: 435px;
+    margin:0 0 10px 15px;
+    background: #404040;
+}
+
+.profileheader h2{
+    margin:10px 10px 10px 10px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid grey;
+    font-weight: normal;
+}
+
+.profileinfoleft{
+    float: left;
+    width:170px;
+    margin:0 0 10px 10px;
+}
+
+.profileinfoleft p{
+    margin:0 0 10px 0;
+    color: #a9a9a9;
+}
+
+.profileinforight{
+    float: left;
+    width:235px;
+    margin:0 0 10px 10px;
+}
+
+.profileinforight p{
+    margin:0 0 10px 0;
+}

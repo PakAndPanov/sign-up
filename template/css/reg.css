@@ -1,0 +1,117 @@
+.regblock{
+    width:500px;
+    background: #404040;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.regblock input[type=submit]{
+    font-size: 15px;
+    font-weight: normal;
+    padding:20px 0;
+    margin:0 0 5px 0;
+    text-decoration: none;
+    color: inherit;
+    background:#525252;
+    cursor: pointer;
+    border:none;
+    width:250px;
+    float:left;
+}
+
+.regblock input[type=submit]:focus{
+    outline: none;
+}
+
+.regblock input[type=checkbox]{
+    padding:10px 5px 10px 15px;
+    margin: 10px 0 0 20px;
+}
+
+.regblock .regbutton input[type=submit]{
+    width:460px;
+    font-size: 15px;
+    font-weight: normal;
+    color: inherit;
+    padding:10px 0 10px 0;
+    margin: 10px 0 10px 20px;
+    background:#525252;
+    border: none;
+}
+
+.regblock .regbutton input[type=submit]:hover{
+    background:#5c5c5c;
+}
+
+.regblock .regbutton input[type=submit]:focus{
+    outline: none;
+}
+
+.regblock input[type=text],.regblock input[type=password],.regblock input[type=email]{
+    width:440px;
+    font-size: 15px;
+    font-weight: normal;
+    color: inherit;
+    padding:10px 5px 10px 15px;
+    margin: 10px 0 0 20px;
+    background:#525252;
+    border: none;
+}
+
+.regblock input[type=text],.regblock input[type=password],.regblock input[type=email]:focus{
+    outline:none;
+    font-style: normal;
+}
+
+.birthdatereg{
+    width:440px;
+    font-size: 15px;
+    font-weight: normal;
+    color: inherit;
+    padding:8px 5px 8px 15px;
+    margin: 10px 0 0 20px;
+    background:#525252;
+    border: none;
+}
+
+.regblock p{
+    display: inline;
+    font-size: 15px;
+    color: #a9a9a9;
+}
+
+.regblock input[type=date]{
+    width:320px;
+    padding:0 0 0 10px;
+    font-size: 15px;
+    font-weight: normal;
+    color: inherit;
+    background:#525252;
+    border: none;
+}
+
+.regblock input[type=date]:focus{
+    outline:none;
+    font-style: normal;
+}
+
+.regbutton input[type=submit]{
+    display: table;
+    font-size: 15px;
+    font-weight: normal;
+    padding:5px 10px;
+    margin:0 auto;
+    text-decoration: none;
+    color: inherit;
+    background:#525252;
+    cursor: pointer;
+    border:none;
+}
+
+.regbutton input[type=submit]:hover{
+    background:#5c5c5c;
+}
+
+.regbutton input[type=submit]:focus{
+    outline: none;
+}

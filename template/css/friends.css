@@ -1,0 +1,184 @@
+.friendsblock{
+    float: left;
+    margin:0 0 0 10px;
+    padding:0 0 5px 0;
+    width:690px;
+    background-color: #2c2b2b;
+}
+
+.friendlist{
+    width:690px;
+}
+
+.friendstop{
+    width:690px;
+    height: 60px;
+    background: #404040;
+    border-bottom:1px solid grey;
+}
+
+.friendstop h2{
+    float: left;
+    margin:20px 0 0 10px;
+    font-weight: normal;
+}
+
+.friendstop a{
+     float: right;
+     padding: 5px 20px;
+     margin:20px 20px 0 0;
+     text-decoration: none;
+     color: inherit;
+     background:#525252;
+ }
+
+.friendstop a:hover{
+    background:#5c5c5c;
+}
+
+.friendlist p{
+    margin:10px 0 0 10px;
+}
+
+.friendsblockresult{
+    display: inline;
+    float: left;
+    width:315px;
+    background:#404040;
+    margin:10px 5px 5px 18px;
+}
+
+.friendsblockresult img{
+    float: left;
+    width:75px;
+    height:75px;
+    padding:5px;
+}
+
+.friendsname{
+    width:215px;
+    float: left;
+    margin:10px 0 0 5px;
+    font-weight: bold;
+    color:#fff;
+}
+
+.friendsgo{
+    width:315px;
+}
+
+.friendsblockresult .friendsgo input[type=submit]{
+    margin: 5px 0 0 0;
+    padding:3px 5px;
+    text-decoration: none;
+    color: inherit;
+    background:#525252;
+    cursor: pointer;
+    border:none;
+}
+
+.friendsblockresult .friendsgo input[type=submit]:hover{
+    background:#5c5c5c;
+}
+
+.friendsblockresult .friendsgo input[type=submit]:focus{
+    outline: none;
+}
+
+.deletefriend{
+    margin:5px 0 0 90px;
+}
+
+.deletefriend a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 13px;
+}
+
+.deletefriend a:hover{
+    text-decoration: underline;
+}
+
+.searchfriends {
+    width:690px;
+    height:40px;
+    background: #555555;
+    border-top: 1px solid grey;
+}
+
+.searchfriends img{
+    width:17px;
+    height:17px;
+    margin:12px 0 0 5px;
+    float: left;
+}
+
+.searchfriends input{
+    width:650px;
+    height:40px;
+    background: inherit;
+    border:none;
+    color:#d6d1d1;
+    float: left;
+    font-size: 14px;
+    margin:0 0 0 10px;
+}
+
+.searchfriends input:focus{
+    outline:none;
+    font-style: normal;
+}
+
+.friendscontent{
+    width:690px;
+    padding:5px 15px;
+}
+
+.friendscontent a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.friendscontent a:hover{
+    text-decoration: underline;
+}
+
+.friendsblockfind{
+    display: inline-block;
+    width:150px;
+    margin:0 16px 20px 0;
+}
+
+.friendsblockfind img{
+    width:150px;
+    height:150px;
+}
+
+.friendsinfofind{
+    width:150px;
+    margin:0 0 0 5px;
+}
+
+.friendsnamefind{
+    margin:20px 0 0 5px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.friendsblockfind .friendsgofind input[type=submit]{
+    padding:3px 5px;
+    text-decoration: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    border:none;
+}
+
+.friendsblockfind .friendsgofind input[type=submit]:hover{
+    text-decoration: underline;
+}
+
+.friendsblockfind .friendsgofind input[type=submit]:focus{
+    outline: none;
+}
