@@ -6,8 +6,8 @@
         <?php
         else: echo '<div class="yousaid">Для начала беседы <a href="/friends">выберите друга</a></div>';
         endif;?>
-        <div class="messagefor" id="messagefor">
-            <div class="scrolling">
+        <div class="messagefor">
+            <div class="scrolling" id="messagefor">
 
             <?php
             if(!empty($messages) && is_array($messages))
