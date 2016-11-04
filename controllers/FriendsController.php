@@ -47,9 +47,9 @@ class FriendsController
         foreach ( $users as $user) {
             echo '<div class="friendsblockfind">' . '
               <img src="/template/img/avatar.jpg">' . '
-              <div class="friendsinfofind"><a href="/id'.$user['id'].'" class="friendsnamefind">' .$user["firstname"].' '.$user["lastname"]. '</a> 
+              <div class="friendsinfofind"><a href="/id'.$user['id'].'" class="friendsnamefind">'.$user["firstname"].' '.$user["lastname"]. '</a> 
               <div class="friendsgofind">
-                <a href="/friends/add/'.$user['id'].'">"Добавить в друзья"</a>
+                <a href="/friends/add/'.$user['id'].'" class="friendaddfind">Добавить в друзья</a>
               </div>
               </div>
               </div>

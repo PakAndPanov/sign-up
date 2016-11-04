@@ -12,7 +12,7 @@
             <?php
             if(!empty($messages) && is_array($messages))
                 foreach ($messages as $message):?>
-                    <p><?php echo $message['author']['firstname']. ': ' .$message['message']['text'];?></p>
+                    <p><div class="messageauthor"><?php echo $message['author']['firstname']?></div><div class="messagetext"><?php echo $message['message']['text'];?></div></p>
                 <?php endforeach;?>
             </div>
         </div>
