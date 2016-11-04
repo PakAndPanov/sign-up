@@ -85,7 +85,7 @@ class MessagesController
     public function actionCheck(){
         if(!User::Logedin()) {header("Location:/");exit();};
         if(isset($_SESSION['friend']))
-        Site::checkMessagesOfUser($_SESSION['user']['id']);
+        Site::checkMessagesOfUser();
         return true;
     }
 

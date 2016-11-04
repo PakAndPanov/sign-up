@@ -65,14 +65,16 @@ class Site
         return $messages;
     }
 
-    public static function checkMessagesOfUser($id){
+    public static function checkMessagesOfUser(){
+
         $db=Db::getConnection();
-        $messages=self::getAllMessages($id);
+        $messages=self::getAllMessages($_SESSION['user']['id']);
         foreach ($messages as $message) {
-            $sql = "UPDATE `messages` SET `status`='1' WHERE `id`=:message AND `receiver_id`=:user_id AND `status`='0'";
+            $sql = "UPDATE `messages` SET `status`='1' WHERE `id`=:message AND `receiver_id`=:user_id AND `status`='0' AND `author_id`=:friend_id";
             $result = $db->prepare($sql);
             $result->bindParam(':message', $message, PDO::PARAM_STR);
-            $result->bindParam(':user_id', $id, PDO::PARAM_STR);
+            $result->bindParam(':user_id', $_SESSION['user']['id'], PDO::PARAM_STR);
+            $result->bindParam(':friend_id', $_SESSION['friend']['id'], PDO::PARAM_STR);
             $result->execute();
         }
     }

@@ -21,6 +21,25 @@
             <div class="messagepost"><input type="submit" name="send" value="Отправить"></div>
         </form>
     </div>
+
+    <div class="unread">
+        Непрочитанные сообщения от:
+        <div class="unreadfriend">
+            <img src="/template/img/avatar.jpg">
+            <div class="unreadname">Ваня</div>
+            <a href="">Перейти к сообщению</a>
+        </div>
+        <div class="unreadfriend">
+            <img src="/template/img/avatar.jpg">
+            <div class="unreadname">Ваня</div>
+            <a href="">Перейти к сообщению</a>
+        </div>
+        <div class="unreadfriend">
+            <img src="/template/img/avatar.jpg">
+            <div class="unreadname">Ваня</div>
+            <a href="">Перейти к сообщению</a>
+        </div>
+    </div>
 </div>
 <script src="/template/js/refreshmsg.js"></script>
 </body>
