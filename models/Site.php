@@ -77,4 +77,22 @@ class Site
         }
     }
 
+    public static function getUnreadenMessages(){
+        $db=Db::getConnection();
+        $sql ="SELECT COUNT(`id`) as count, author_id as author FROM `messages` WHERE STATUS='0'and receiver_id=:userid GROUP BY author_id";
+        $result = $db->prepare($sql);
+        $result->bindParam(':userid', $_SESSION['user']['id'], PDO::PARAM_STR);
+        $result->execute();
+        $unreadmsg=array();
+        $i=0;
+        while ($row=$result->fetch()){
+            $unreadmsg[$i]['author']=$row['author'];
+            $unreadmsg[$i]['count']=$row['count'];
+            $i++;
+        }
+        return $unreadmsg;
+
+
+    }
+
 }

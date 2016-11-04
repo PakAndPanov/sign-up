@@ -172,7 +172,21 @@ class User
         }
         return false;
     }
+    public static  function deleteUserFromFriend($id){
+        $db=Db::getConnection();
+        $friends=self::getFriendsByUser($_SESSION['user']['id']);
+        foreach ($friends as $i=>$friend) {
 
+            if($friend==$id) unset($friends[$i]);
+        }
+
+        $strfriend = base64_encode(serialize($friends));
+        $sql = 'UPDATE `users` SET `friends`=:strfriend';
+        $result = $db->prepare($sql);
+        $result->bindParam(':strfriend', $strfriend, PDO::PARAM_STR);
+        return $result->execute();
+
+    }
 
 
 }

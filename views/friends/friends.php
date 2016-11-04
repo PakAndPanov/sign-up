@@ -17,7 +17,7 @@
                                     <input type="submit" name="submit" value="Написать сообщение">
                                     <input type="hidden" name="friend" value="<?php echo $friend['id'];?>">
                                 </form>
-                                <div class="deletefriend"><a href="#">Удалить из друзей</a></div>
+                                <div class="deletefriend"><a href="/friends/delete/<?php echo $friend['id']?>">Удалить из друзей</a></div>
                             </div>
                         </div>
 

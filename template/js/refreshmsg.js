@@ -29,5 +29,4 @@ $(function () {
     block.scrollTop = block.scrollHeight;
     
 })
-array=[];
 

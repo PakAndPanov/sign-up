@@ -8,7 +8,7 @@
  */
 class FriendsController
 {
-    public static function actionIndex(){
+    public function actionIndex(){
         if(!User::Logedin()) header("Location:/");
         $strfriends=User::getFriendsByUser($_SESSION['user']['id']);
         if($strfriends){
@@ -19,7 +19,7 @@ class FriendsController
         return true;
     }
 
-    public static function actionAdd($id){
+    public function actionAdd($id){
         if(!User::Logedin()) {header("Location:/"); exit();}
         $id=intval(htmlspecialchars($id));
         if(is_int($id)){
@@ -29,11 +29,19 @@ class FriendsController
         return true;
     }
 
-    public static function actionSearch(){
+    public function actionSearch(){
 
        if(!User::Logedin()) header("Location:/");
 
        require_once ROOT.'/views/friends/find.php';
+        return true;
+    }
+
+    public function actionDelete($id){
+        if(!User::Logedin()) header("Location:/");
+        if(User::deleteUserFromFriend($id))
+            header('Location: /friends');
+
         return true;
     }
 
@@ -45,6 +53,7 @@ class FriendsController
         $users=User::getFriendsByName($searchtext);
 
         foreach ( $users as $user) {
+            if($user['id']!=$_SESSION['user']['id']){
             echo '<div class="friendsblockfind">' . '
               <img src="/template/img/avatar.jpg">' . '
               <div class="friendsinfofind"><a href="/id'.$user['id'].'" class="friendsnamefind">' .$user["firstname"].' '.$user["lastname"]. '</a> 
@@ -55,6 +64,7 @@ class FriendsController
               </div>
 ';
 
+        }
         }
         return true;
     }

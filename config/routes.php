@@ -9,13 +9,17 @@ return array(
 
     'site'=>'site/index',
 
-    'messages/refresh' => 'messages/refresh',
-
     'id([0-9]+)'=>'profile/index/$1',
+
+    'messages/unreadenMsg' => 'messages/unreadenMsg',
+
+    'messages/refresh' => 'messages/refresh',
 
     'messages/check'=>'messages/check',
 
     'messages'=>'messages/index',
+
+    'friends/delete/([0-9]+)' => 'friends/delete/$1',
     
     'friends/refreshsearchfriends'=>'friends/refreshsearchfriends',
 

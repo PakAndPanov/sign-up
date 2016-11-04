@@ -44,36 +44,47 @@ class MessagesController
         require_once ROOT.'/views/messages/messages.php';
         return true;
     }
+    
+    public static  function actionUnreadenMsg(){
+        if(!User::Logedin()) {header("Location:/");exit();};
+        $unreadmsg=Site::getUnreadenMessages();
+        $count=count($unreadmsg);
+        echo $count;
+        return true;
+    }
 
     public function actionRefresh(){
         if(!User::Logedin()) {header("Location:/");exit();};
-        $idmessages = Site::getAllMessages($_SESSION['user']['id']);
-        $messages = array();
-        if (!empty($idmessages)) {
-            $i=0;
-            foreach ($idmessages as $message) {
+        if(isset($_SESSION['friend']) && !empty($_SESSION['friend'])) {
+            $idmessages = Site::getAllMessages($_SESSION['user']['id']);
+            $messages = array();
+            if (!empty($idmessages)) {
+                $i = 0;
+                foreach ($idmessages as $message) {
 
-                $temp=Site::getMessageById($message);
-                if($temp && $temp['status']=='0' && $temp['receiver_id']==$_SESSION['user']['id']) {
-                    $messages[$i]['message'] = $temp;
-                    $messages[$i]['author'] = User::getUserById($temp['author_id']);
-                    if(isset($_POST['from']) && $_POST['from']=='message')
-                    Site::checkMessagesOfUser($_SESSION['user']['id']);
+                    $temp = Site::getMessageById($message);
+                    if ($temp && $temp['status'] == '0' && $temp['receiver_id'] == $_SESSION['user']['id']) {
+                        $messages[$i]['message'] = $temp;
+                        $messages[$i]['author'] = User::getUserById($temp['author_id']);
+                        if (isset($_POST['from']) && $_POST['from'] == 'message')
+                            Site::checkMessagesOfUser($_SESSION['user']['id']);
+                    }
+                    $i++;
                 }
-                $i++;
             }
-        }
-        
 
-    if(!empty($messages) && is_array($messages))
-    foreach ($messages as $message):
-       echo  "<p>".$message['author']['firstname'].': '.$message['message']['text']."</p>";
-    endforeach;
+
+            if (!empty($messages) && is_array($messages))
+                foreach ($messages as $message):
+                    echo "<p>" . $message['author']['firstname'] . ': ' . $message['message']['text'] . "</p>";
+                endforeach;
+        }
         return true;
     }
 
     public function actionCheck(){
         if(!User::Logedin()) {header("Location:/");exit();};
+        if(isset($_SESSION['friend']))
         Site::checkMessagesOfUser($_SESSION['user']['id']);
         return true;
     }
