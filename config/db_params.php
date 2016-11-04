@@ -2,7 +2,7 @@
 
 return array(
     'host' => 'localhost',
-    'dbname' => 'sign-up',
+    'dbname' => 'sign_up',
     'user' => 'root',
-    'password' => '123',
+    'password' => 'secret',
 );

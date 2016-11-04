@@ -8,13 +8,11 @@
  */
 class SiteController
 {
-   public function actionIndex(){
+        public function actionIndex(){
             if(!User::Logedin()) header("Location:/");
             require_once  ROOT.'/views/site/index.php';
         return true;
     }
-    
-    
 
 
 }

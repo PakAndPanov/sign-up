@@ -12,7 +12,7 @@
             <?php
             if(!empty($messages) && is_array($messages))
                 foreach ($messages as $message):?>
-                    <p><div class="messageauthor"><?php echo $message['author']['firstname']?></div><div class="messagetext"><?php echo $message['message']['text'];?></div></p>
+                    <p><?php echo $message['author']['firstname']. ': ' .$message['message']['text'];?></p>
                 <?php endforeach;?>
             </div>
         </div>
@@ -20,25 +20,6 @@
             <div class="messageposttext"><textarea name="message" placeholder="Введите сообщение..."></textarea></div>
             <div class="messagepost"><input type="submit" name="send" value="Отправить"></div>
         </form>
-    </div>
-
-    <div class="unread">
-        Непрочитанные сообщения от:
-        <div class="unreadfriend">
-            <img src="/template/img/avatar.jpg">
-            <div class="unreadname">Ваня</div>
-            <a href="">Перейти к сообщению</a>
-        </div>
-        <div class="unreadfriend">
-            <img src="/template/img/avatar.jpg">
-            <div class="unreadname">Ваня</div>
-            <a href="">Перейти к сообщению</a>
-        </div>
-        <div class="unreadfriend">
-            <img src="/template/img/avatar.jpg">
-            <div class="unreadname">Ваня</div>
-            <a href="">Перейти к сообщению</a>
-        </div>
     </div>
 </div>
 <script src="/template/js/refreshmsg.js"></script>
