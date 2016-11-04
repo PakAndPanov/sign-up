@@ -18,16 +18,13 @@
 <body>
 <div class="section">
     <div class="logo"><a href="/"><img src="/template/img/logo.png"></a></div>
-
-    <div class="rowpannel">
         <div class="search">
-            <img src="/template/img/search.png">
-            <input type="search" placeholder="Поиск..." required>
+            <input type="search" placeholder="Ищете кого-нибудь?" required>
+            <a href=""><img src="/template/img/search.png"></a>
         </div>
         <div id="authreg">
             <a href="/user/logout">Выход</a>
         </div>
-    </div>
 </div>
 <div class="wrapper">
     <div class="menu">
