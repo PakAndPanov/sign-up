@@ -11,7 +11,7 @@
 
                         <div class="friendsblockresult">
                             <img src="/template/img/avatar.jpg">
-                            <div class="friendsname"><?php echo $friend['firstname'];?> <?php echo $friend['lastname'];?></div>
+                            <div class="friendsname"><a href="/id<?php echo $friend['id'];?>"><?php echo $friend['firstname'];?> <?php echo $friend['lastname'];?></a> </div>
                             <div class="friendsgo">
                                 <form action="/messages" method="post">
                                     <input type="submit" name="submit" value="Написать сообщение">
@@ -28,5 +28,6 @@
 
         </div>
 </div>
+<script src="/template/js/msgalert.js"></script>
 </body>
 </html>

@@ -16,5 +16,6 @@
     </div>
 </div>
 <script src="/template/js/searchfriends.js"></script>
+<script src="/template/js/msgalert.js"></script>
 </body>
 </html>

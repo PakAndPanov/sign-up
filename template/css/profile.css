@@ -1,13 +1,17 @@
+.contentprofile{
+    width: 1000px;
+}
+
 .profileavatar.block{
     width:220px;
     float: left;
-    background: #404040;
-    margin:0 0 10px 0;
+    background: #fff;
+    margin:0 0 10px 10px;
 }
 
 .profileavatar img{
     width:200px;
-    height: 230px;
+    height: 200px;
     margin:10px 10px 0 10px;
 }
 
@@ -23,12 +27,12 @@
     text-decoration: none;
     text-align: center;
     color: inherit;
-    background:#525252;
+    background:#f8f8f8;
     border:none;
 }
 
 .profileavatar.edit a:hover{
-    background:#5c5c5c;
+    background:#e6e6e6;
 }
 
 .profileavatar.edit a:focus{
@@ -37,15 +41,15 @@
 
 .profile.block{
     float: left;
-    width: 435px;
-    margin:0 0 10px 15px;
-    background: #404040;
+    width: 465px;
+    margin:0 0 10px 5px;
+    background: #fff;
 }
 
 .profileheader h2{
     margin:10px 10px 10px 10px;
     padding: 0 0 10px 0;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #e2dada;
     font-weight: normal;
 }
 

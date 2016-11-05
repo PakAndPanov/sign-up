@@ -2,7 +2,7 @@
  * Created by Сергей on 01.11.2016.
  */
 var unreadmsg=0;
-function f() {
+function Unread() {
     $.ajax({
         url: "/messages/unreadenMsg",
         method: 'post',
@@ -18,7 +18,7 @@ function f() {
         }
     });
 }
-setInterval("f()",3000);
+setInterval("Unread()",3000);
 $(function () {
 
     $.ajax({

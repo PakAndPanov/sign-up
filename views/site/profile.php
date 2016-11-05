@@ -1,5 +1,5 @@
 <?php include ROOT.'/views/layouts/header.php'?>
-<div class="content">
+<div class="contentprofile">
     <div class="profileavatar block">
         <img src="/template/img/avatar.jpg">
         <div class="profileavatar edit"><a href="#">Изменить аву</a></div>
@@ -18,6 +18,6 @@
     </div>
 </div>
 </div>
-
+<script src="/template/js/msgalert.js"></script>
 </body>
 </html>

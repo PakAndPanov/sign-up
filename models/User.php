@@ -161,32 +161,51 @@ class User
     public static function addUserToFriend($id){
         $db=Db::getConnection();
         $friends=self::getFriendsByUser($_SESSION['user']['id']);
-
+        $friendsoffriend=self::getFriendsByUser($id);
         if(!in_array($id,$friends)) {
             $friends[] = $id;
             $strfriend = base64_encode(serialize($friends));
-            $sql = 'UPDATE `users` SET `friends`=:strfriend';
+            $sql = 'UPDATE `users` SET `friends`=:strfriend WHERE `id`=:id';
             $result = $db->prepare($sql);
             $result->bindParam(':strfriend', $strfriend, PDO::PARAM_STR);
+            $result->bindParam(':id', $_SESSION['user']['id'], PDO::PARAM_STR);
+            $result->execute();
+            $friendsoffriend[]=$_SESSION['user']['id'];
+            $strfriend = base64_encode(serialize($friendsoffriend));
+            $sql = 'UPDATE `users` SET `friends`=:strfriend WHERE `id`=:id';
+            $result = $db->prepare($sql);
+            $result->bindParam(':strfriend', $strfriend, PDO::PARAM_STR);
+            $result->bindParam(':id', $id, PDO::PARAM_STR);
             return $result->execute();
         }
         return false;
     }
     public static  function deleteUserFromFriend($id){
         $db=Db::getConnection();
-        $friends=self::getFriendsByUser($_SESSION['user']['id']);
-        foreach ($friends as $i=>$friend) {
+        $friendsofuser=self::getFriendsByUser($_SESSION['user']['id']);
+        $friendsoffriend=self::getFriendsByUser($id);
+        foreach ($friendsofuser as $i=>$friend) {
 
-            if($friend==$id) unset($friends[$i]);
+            if($friend==$id) unset($friendsofuser[$i]);
+        }
+        foreach ($friendsoffriend as $i=>$friend) {
+
+            if($friend==$_SESSION['user']['id']) unset($friendsoffriend[$i]);
         }
 
-        $strfriend = base64_encode(serialize($friends));
+        $strfriend = base64_encode(serialize($friendsofuser));
+        $sql = 'UPDATE `users` SET `friends`=:strfriend';
+        $result = $db->prepare($sql);
+        $result->bindParam(':strfriend', $strfriend, PDO::PARAM_STR);
+        $strfriend = base64_encode(serialize($friendsoffriend));
         $sql = 'UPDATE `users` SET `friends`=:strfriend';
         $result = $db->prepare($sql);
         $result->bindParam(':strfriend', $strfriend, PDO::PARAM_STR);
         return $result->execute();
 
     }
+
+
 
 
 }

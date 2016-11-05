@@ -1,9 +1,8 @@
 .messageblock{
-    margin:0 0 0 10px;
     float: right;
     width:690px;
     height: 600px;
-    background-color: #2c2b2b;
+    background-color: #fff;
 }
 
 .messageposttext textarea{
@@ -16,7 +15,7 @@
     font-family:inherit;
     padding: 10px;
     border: none;
-    border-top:1px solid;
+    border-top:1px solid #e2dada;
     resize: none;
 }
 
@@ -33,7 +32,7 @@
     top: 605px;
     text-decoration: none;
     color: inherit;
-    background:#525252;
+    background:#f8f8f8;
     padding:10px 5px;
     cursor: pointer;
     border:none;
@@ -41,7 +40,7 @@
 }
 
 .messagepost input[type="submit"]:hover{
-    background:#5c5c5c;
+    background:#e6e6e6;
 }
 
 .messagepost input[type="submit"]:focus{
@@ -49,29 +48,28 @@
 }
 
 .yousaid{
-    margin:20px 0 0 10px;
+    float: right;
+    display:table;
+    margin:10px 0 0 0;
+    padding:10px;
+    text-transform: uppercase;
+    font-style: italic;
+    background: #222;
+    color:#fff;
 }
 
-.yousaid p{
-    display: inline;
-    padding:10px;
+.yousaid span{
+    color:#e8ca14;
 }
 
 .yousaid a{
-    text-decoration: none;
-    color: inherit;
-    padding:10px 10px 10px 0;
-    font-style: italic;
-}
-
-.yousaid a:hover{
-    text-decoration: underline;
+    color:#fff;
 }
 
 .messagefor{
     position: relative;
     width:665px;
-    height:390px;
+    height:380px;
     margin: 10px 0 0 5px;
     padding:5px;
     background: inherit;
@@ -80,17 +78,11 @@
     word-wrap: break-word;
 }
 
-.messagefor p{
-    width:665px;
-    background: #404040;
-    padding:5px;
-}
-
 .scrolling{
     position: relative;
     box-sizing: border-box;
     width: 800px;
-    max-height: 390px;
+    max-height: 380px;
     padding-right: 20px;
     overflow-y: scroll;
 }
@@ -104,4 +96,64 @@
     resize: none;
     border:none;
     margin:5px 0 5px 0;
+}
+
+.messageauthor{
+    margin:0 0 5px 0;
+    font-weight: bold;
+}
+
+.messagetext{
+    width:665px;
+    background: #f8f8f8;
+    padding:5px;
+}
+
+.unread{
+    float: left;
+    width:300px;
+    background: #fff;
+    margin:5px 0 0 0;
+}
+
+.unread h1{
+    background: #222;
+    color:#e2dada;
+    text-transform: uppercase;
+    padding:10px 0 10px 20px;
+    font-size:16px;
+    font-weight: normal;
+}
+
+.unreadfriend{
+    display: inline;
+    float: left;
+    width:300px;
+    background:#fff;
+    margin:0 5px 5px 0;
+}
+
+.unreadfriend img{
+    float: left;
+    width:50px;
+    height:50px;
+    padding:5px;
+}
+
+.unreadmsg{
+    margin:7px 0 0 0;
+}
+
+.unreadmsg a{
+    text-decoration: none;
+    color:#222;
+}
+
+.unreadmsg a:hover{
+    text-decoration: underline;
+}
+
+.unreadname{
+    margin:10px 0 0 0;
+    font-weight: bold;
 }

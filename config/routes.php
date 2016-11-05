@@ -7,6 +7,8 @@ return array(
 
     'user/logout' => 'user/logout',
 
+    'site/viewnew'=>'site/viewnew',
+
     'site'=>'site/index',
 
     'id([0-9]+)'=>'profile/index/$1',

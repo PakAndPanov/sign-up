@@ -2,35 +2,25 @@
 
 
         <div class="content">
+
+            <?php
+            if(isset($Allnews) && !empty($Allnews)):
+            foreach ($Allnews as $new):?>
             <div class="newsblock">
-                <div class="newsimg"><img src="../../template/img/avatar.jpg"></div>
-                <div class="newstitle"><a href="#">Название новости</a></div>
-                <div class="newsdate">27 октября 2016</div>
-                <div class="newsauthor">Electure</div>
+                <div class="newstitle"><a href="#"><?php echo $new['title'];?></a></div>
+                <div class="newsdate"><?php echo date('d.m.Y',$new['date']);?></div>
+                <div class="newsauthor">от <?php echo $new['author'];?></div>
                 <div class="newscontent">
                     <p>
-                        Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
-                        текст текст текст текст текст
+                        <?php echo $new['description'];?>
                     </p>
-                    <div class="newsbutton"><a href="#">Читать полностью</a></div>
-                </div>
-            </div>
-
-                        <div class="newsblock">
-                <div class="newsimg"><img src="../../template/img/avatar.jpg"></div>
-                <div class="newstitle"><a href="#">Название новости</a></div>
-                <div class="newsdate">27 октября 2016</div>
-                <div class="newsauthor">Electure</div>
-                <div class="newscontent">
-                    <p>
-                        Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
-                        текст текст текст текст текст
-
-                    </p>
-                    <div class="newsbutton"><a href="#">Читать полностью</a></div>
+                    <div class="newsbutton"><a href="/site/viewnew">Читать полностью</a></div>
                 </div>
 
             </div>
+            <?php endforeach;
+            endif;
+            ?>
 
 
 
@@ -39,5 +29,6 @@
 
     
     <script type="text/javascript" src="/template/js/friends.js"></script>
+<script src="/template/js/msgalert.js"></script>
 </body>
 </html>

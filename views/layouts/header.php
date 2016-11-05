@@ -13,21 +13,18 @@
     <link rel="stylesheet" type="text/css" href="/template/css/news.css">
     <link rel="stylesheet" type="text/css" href="/template/css/messages.css">
     <script src="/template/js/jquery-3.1.1.min.js"></script>
-    <script src="/template/js/msgalert.js"></script>
+    
 </head>
 <body>
 <div class="section">
     <div class="logo"><a href="/"><img src="/template/img/logo.png"></a></div>
-
-    <div class="rowpannel">
         <div class="search">
-            <img src="/template/img/search.png">
-            <input type="search" placeholder="Поиск..." required>
+            <input type="search" placeholder="Ищете кого-нибудь?" required>
+            <a href=""><img src="/template/img/search.png"></a>
         </div>
         <div id="authreg">
             <a href="/user/logout">Выход</a>
         </div>
-    </div>
 </div>
 <div class="wrapper">
     <div class="menu">
