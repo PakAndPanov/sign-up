@@ -3,10 +3,15 @@
     <div class="profileavatar block">
         <img src="/template/img/avatar.jpg">
         <div class="profileavatar edit"><a href="#">Изменить аву</a></div>
+        <div class="profile sendmsg"><a href="#">Написать сообщение</a></div>
+        <div class="profile myaudio"><a href="#">Мои аудиозаписи</a></div>
     </div>
 
     <div class="profile block">
-        <div class="profileheader"><h2><?php echo $user['firstname'];?> <?php echo $user['lastname'];?></h2></div>
+        <div class="profileheader">
+            <h2><?php echo $user['firstname'];?> <?php echo $user['lastname'];?></h2>
+            <a href="">Добавить в друзья</a>
+        </div>
         <div class="profileinfoleft">
             <p>День рождения:</p>
             <p>Город:</p>

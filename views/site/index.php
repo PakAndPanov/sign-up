@@ -8,8 +8,10 @@
             foreach ($Allnews as $new):?>
             <div class="newsblock">
                 <div class="newstitle"><a href="#"><?php echo $new['title'];?></a></div>
-                <div class="newsdate"><?php echo date('d.m.Y',$new['date']);?></div>
-                <div class="newsauthor">от <?php echo $new['author'];?></div>
+                <div class="newsdate">
+                    <?php echo date('d.m.Y',$new['date']);?>
+                    от <?php echo $new['author'];?>
+                </div>
                 <div class="newscontent">
                     <p>
                         <?php echo $new['description'];?>

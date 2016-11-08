@@ -121,31 +121,31 @@ a:focus{
     line-height: 20px;
     margin: 0 0 0 10px;
     font-size:16px;
+    font-weight: bold;
     text-decoration: none;
 }
 
 .newstitle a:focus{
     color:#e8ca14;
-
 }
 
-.newsdate,.newsauthor{
+.newsdate{
+    width: 660px;
     float: left;
+    margin:0 0 0 10px;
     text-decoration: none;
     color:#8e8e8e;
     font-size:11px;
-    margin:0 0 0 10px;
     font-style: italic;
 }
 
 .newscontent{
-    width:550px;
-    text-align: justify;
+    width:660px;
     overflow: hidden;
 }
 
 .newscontent p{
-    float: left;
+    width:650px;
     margin:10px 0 0 10px;
 }
 

@@ -15,10 +15,6 @@
     margin:10px 10px 0 10px;
 }
 
-.profileavatar.edit{
-    padding:0 0 10px 0;
-}
-
 .profileavatar.edit a{
     display: block;
     width:200px;
@@ -39,6 +35,54 @@
     outline: none;
 }
 
+.profile.sendmsg{
+    margin:5px 0 0 0;
+}
+
+.profile.sendmsg a{
+    display: block;
+    width:200px;
+    padding:5px 0;
+    margin:0 0 0 10px;
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+    background:#f8f8f8;
+    border:none;
+}
+
+.profile.sendmsg a:hover{
+    background:#e6e6e6;
+}
+
+.profile.sendmsg a:focus{
+    outline: none;
+}
+
+.profile.myaudio{
+    margin:5px 0 10px 0;
+}
+
+.profile.myaudio a{
+    display: block;
+    width:200px;
+    padding:5px 0;
+    margin:0 0 0 10px;
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+    background:#e6e6e6;
+    border:none;
+}
+
+.profile.myaudio a:hover{
+    background:#e8ca14;
+}
+
+.profile.myaudio a:focus{
+    outline: none;
+}
+
 .profile.block{
     float: left;
     width: 465px;
@@ -46,11 +90,38 @@
     background: #fff;
 }
 
-.profileheader h2{
-    margin:10px 10px 10px 10px;
-    padding: 0 0 10px 0;
+.profileheader{
+    width: 465px;
+    height: 45px;
     border-bottom: 1px solid #e2dada;
+    margin: 0 0 10px 0;
+}
+
+.profileheader h2{
+    float: left;
+    margin:10px;
+    padding: 0 0 10px 0;
     font-weight: normal;
+}
+
+.profileheader a{
+    float: right;
+    margin:12px 10px 0 0;
+    padding:3px 5px;
+    text-decoration: none;
+    color: #fff;
+    background:#222;
+    cursor: pointer;
+    border:none;
+}
+
+.profileheader a:hover{
+    background:#e8ca14;
+    color: #222;
+}
+
+.profileheader a:focus{
+    outline: none;
 }
 
 .profileinfoleft{

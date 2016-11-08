@@ -79,11 +79,8 @@
 }
 
 .scrolling{
-    position: relative;
-    box-sizing: border-box;
-    width: 800px;
+    width: 1000px;
     max-height: 380px;
-    padding-right: 20px;
     overflow-y: scroll;
 }
 
@@ -109,28 +106,42 @@
     padding:5px;
 }
 
-.unread{
+.titleunreadblock h1{
+    width:280px;
     float: left;
-    width:300px;
-    background: #fff;
-    margin:5px 0 0 0;
-}
-
-.unread h1{
     background: #222;
     color:#e2dada;
     text-transform: uppercase;
     padding:10px 0 10px 20px;
     font-size:16px;
     font-weight: normal;
+    margin:5px 0 0 0;
+}
+
+.unread{
+    position: relative;
+    float: left;
+    width:300px;
+    background: #fff;
+    padding:10px 0 5px 0;
+    max-height:300px;
+    overflow:hidden;
+}
+
+.scrollingmini{
+    position: relative;
+    box-sizing: border-box;
+    width: 400px;
+    max-height: 300px;
+    overflow-y: scroll;
 }
 
 .unreadfriend{
     display: inline;
     float: left;
     width:300px;
-    background:#fff;
-    margin:0 5px 5px 0;
+    background:#222;
+    margin: 0 0 5px 0;
 }
 
 .unreadfriend img{
@@ -138,6 +149,23 @@
     width:50px;
     height:50px;
     padding:5px;
+}
+
+.unreadfriend input[type="submit"]{
+    margin: 5px 0 0 -5px;
+    text-decoration: none;
+    color: #fff;
+    background:#222;
+    cursor: pointer;
+    border:none;
+}
+
+.unreadfriend input[type="submit"]:hover{
+    color: #e8ca14;
+}
+
+.unreadfriend input[type="submit"]:focus{
+    outline: none;
 }
 
 .unreadmsg{
@@ -155,5 +183,5 @@
 
 .unreadname{
     margin:10px 0 0 0;
-    font-weight: bold;
+    color:#fff;
 }

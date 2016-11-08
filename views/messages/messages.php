@@ -25,6 +25,7 @@
     <?php if(isset($unreadmsg)):
         ?>
     <div class="unread">
+        <div class="scrollingmini">
         <h1>Непрочитанные сообщения</h1>
         <?php foreach ($unreadmsg as $i=>$msg):
         if(empty($friend) || $msg['author_id'] !=$friend['id'] ):
@@ -41,13 +42,14 @@
 
     <?php
     endif;?>
-    </div><?php
+    </div></div><?php
         endforeach;
              endif;
 
     if(isset($friends) && !empty($friends)):?>
+        <div class="titleunreadblock"><h1>Написать друзьям</h1></div>
     <div class="unread">
-    <h1>Написать друзьям</h1>
+        <div class="scrollingmini">
         <?php
     foreach ($friends as $friend): ?>
         <div class="unreadfriend">
@@ -62,7 +64,7 @@
     <?php
     endforeach;
         ?>
-    </div>
+    </div></div>
 
         <?php
     endif;
