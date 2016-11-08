@@ -1,6 +1,6 @@
 .authblock{
     width:500px;
-    background: #404040;
+    background: #e8ca14;
     margin: 0 auto;
     margin-top: 10px;
 }
@@ -9,16 +9,24 @@
     width:440px;
     font-size: 15px;
     font-weight: normal;
-    color: inherit;
+    color: #fff;
     padding:10px 5px 10px 15px;
     margin: 10px 0 0 20px;
-    background:#525252;
+    background:#222;
     border: none;
 }
 
 .authblock input[type=text],.authblock input[type=password]:focus{
     outline:none;
     font-style: normal;
+}
+
+.authblock input[type=text]::-webkit-input-placeholder {
+    color: white;
+}
+
+.authblock input[type=password]::-webkit-input-placeholder {
+    color: white;
 }
 
 .cellinput .authbutton{
@@ -28,8 +36,8 @@
     padding:20px 0;
     margin:0 0 5px 0;
     text-decoration: none;
-    color: #fff;
-    background:#525252;
+    color: #222;
+    background: #e8ca14;
     cursor: pointer;
     border:none;
     width:250px;
@@ -44,7 +52,7 @@
     margin:0 0 5px 0;
     text-decoration: none;
     color: #fff;
-    background:#525252;
+    background:#222;
     cursor: pointer;
     border:none;
     width:250px;
@@ -60,10 +68,10 @@
     width:460px;
     font-size: 15px;
     font-weight: normal;
-    color: inherit;
+    color: #fff;
     padding:10px 0 10px 0;
     margin: 10px 0 10px 20px;
-    background:#525252;
+    background:#222;
     border: none;
 }
 

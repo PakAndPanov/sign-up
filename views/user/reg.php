@@ -14,7 +14,7 @@
         <form action="" method="POST">
             <div class="cellinput">
             <a href="/" class="authbutton">Вход</a>
-            <a href="/user/register" class="regbutton" style="background: #404040;">Регистрация</a>
+            <a href="/user/register" class="regbutton">Регистрация</a>
             </div>
             <table>
                 <tr>

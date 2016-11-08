@@ -12,7 +12,7 @@
     <div class="authblock">
         <form action="" method="POST">
             <div class="cellinput">
-                <a href="/" class="authbutton" style="background: #404040;">Вход</a>
+                <a href="/" class="authbutton">Вход</a>
                 <a href="/user/register" class="regbutton">Регистрация</a>
             </div>
             <table>

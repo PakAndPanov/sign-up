@@ -12,7 +12,10 @@
             <?php
             if(!empty($messages) && is_array($messages))
                 foreach ($messages as $message):?>
-                    <p><div class="messageauthor"><?php echo $message['author']['firstname']?></div><div class="messagetext"><?php echo $message['message']['text'];?></div></p>
+                    <div class="notreadmsg">
+                        <div class="messageauthor"><?php echo $message['author']['firstname']?></div>
+                        <div class="messagetext"><?php echo $message['message']['text'];?></div>
+                    </div>
                 <?php endforeach;?>
             </div>
         </div>
@@ -24,9 +27,9 @@
 
     <?php if(isset($unreadmsg)):
         ?>
+        <div class="titleunreadblock"><h1>Непрочитанные сообщения</h1></div>
     <div class="unread">
         <div class="scrollingmini">
-        <h1>Непрочитанные сообщения</h1>
         <?php foreach ($unreadmsg as $i=>$msg):
         if(empty($friend) || $msg['author_id'] !=$friend['id'] ):
             ?>
@@ -52,6 +55,51 @@
         <div class="scrollingmini">
         <?php
     foreach ($friends as $friend): ?>
+        <div class="unreadfriend">
+            <img src="/template/img/avatar.jpg">
+            <div class="unreadname"><?php echo $friend['firstname'].' '.$friend['lastname'];?></div>
+            <form action="/messages" method="post">
+                <input type="submit" name="submit" value="Написать сообщение">
+                <input type="hidden" name="friend" value="<?php echo $friend['id'];?>">
+            </form>
+        </div>
+
+        <div class="unreadfriend">
+            <img src="/template/img/avatar.jpg">
+            <div class="unreadname"><?php echo $friend['firstname'].' '.$friend['lastname'];?></div>
+            <form action="/messages" method="post">
+                <input type="submit" name="submit" value="Написать сообщение">
+                <input type="hidden" name="friend" value="<?php echo $friend['id'];?>">
+            </form>
+        </div>
+
+        <div class="unreadfriend">
+            <img src="/template/img/avatar.jpg">
+            <div class="unreadname"><?php echo $friend['firstname'].' '.$friend['lastname'];?></div>
+            <form action="/messages" method="post">
+                <input type="submit" name="submit" value="Написать сообщение">
+                <input type="hidden" name="friend" value="<?php echo $friend['id'];?>">
+            </form>
+        </div>
+
+        <div class="unreadfriend">
+            <img src="/template/img/avatar.jpg">
+            <div class="unreadname"><?php echo $friend['firstname'].' '.$friend['lastname'];?></div>
+            <form action="/messages" method="post">
+                <input type="submit" name="submit" value="Написать сообщение">
+                <input type="hidden" name="friend" value="<?php echo $friend['id'];?>">
+            </form>
+        </div>
+
+        <div class="unreadfriend">
+            <img src="/template/img/avatar.jpg">
+            <div class="unreadname"><?php echo $friend['firstname'].' '.$friend['lastname'];?></div>
+            <form action="/messages" method="post">
+                <input type="submit" name="submit" value="Написать сообщение">
+                <input type="hidden" name="friend" value="<?php echo $friend['id'];?>">
+            </form>
+        </div>
+
         <div class="unreadfriend">
             <img src="/template/img/avatar.jpg">
             <div class="unreadname"><?php echo $friend['firstname'].' '.$friend['lastname'];?></div>

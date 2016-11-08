@@ -70,7 +70,7 @@
     position: relative;
     width:665px;
     height:380px;
-    margin: 10px 0 0 5px;
+    margin: 5px 0 0 5px;
     padding:5px;
     background: inherit;
     overflow:hidden;
@@ -79,8 +79,8 @@
 }
 
 .scrolling{
-    width: 1000px;
-    max-height: 380px;
+    width: 750px;
+    height:380px;
     overflow-y: scroll;
 }
 
@@ -95,15 +95,26 @@
     margin:5px 0 5px 0;
 }
 
+.notreadmsg{
+    background:#f8f8f8;
+    margin:3px 0 0 0;
+}
+
 .messageauthor{
-    margin:0 0 5px 0;
+    margin:0 0 5px 5px;
+    padding:5px 0 0 0;
     font-weight: bold;
 }
 
 .messagetext{
     width:665px;
-    background: #f8f8f8;
     padding:5px;
+
+}
+
+.titleunreadblock{
+    background: #fff;
+    padding:10px 0 0 0;
 }
 
 .titleunreadblock h1{
@@ -124,15 +135,13 @@
     width:300px;
     background: #fff;
     padding:10px 0 5px 0;
-    max-height:300px;
+    max-height:325px;
     overflow:hidden;
 }
 
 .scrollingmini{
-    position: relative;
-    box-sizing: border-box;
     width: 400px;
-    max-height: 300px;
+    max-height:325px;
     overflow-y: scroll;
 }
 
